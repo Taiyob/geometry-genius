@@ -26,7 +26,8 @@ function calculateEllipseArea(){
     const firstRadius = getInputValue('ellipse-first-radius');
     const secondRadius = getInputValue('ellipse-second-redius');
 
-    const area = 3.1416 * firstRadius * secondRadius;
+    const areaPoint = 3.1416 * firstRadius * secondRadius;
+    const area = areaPoint.toFixed(2);
     setInnerText('ellipse-area',area);
 }
 
